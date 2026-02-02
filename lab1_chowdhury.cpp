@@ -4,6 +4,8 @@ Jan 26, 2026
 lab 1, iostream
 */
 
+//CLASS EXAMPLES
+
 // header library
 #include<iostream>
 
@@ -42,6 +44,27 @@ int main(){
     // print result
     cout<<"Welcome to C++ "<<lastname<<" Your rate is "<<n<<endl;
 
-    cout<<"EXERSICE"<<endl;
+    cout<<"\nEXERCISE"<<endl;
+
+    // Declaring variables
+    string country;
+    char gender;
+    int zipcode;
+    float rate;
+
+    //Saving input to variables
+    cout<<"Enter a country: ";
+    cin>>country;
+    cout<<"\nEnter a gender: ";
+    cin>>gender;
+    cout<<"\nEnter a zipcode: ";
+    cin>>zipcode;
+    cout<<"\nEnter a rate: ";
+    cin>>rate;
+
+    cout<<"\nEntered country:\t"<<country;
+    cout<<"\nSelected gender:\t"<<gender;
+    cout<<"\nZip code:\t"<<zipcode;
+    cout<<"\nTax rate:\t"<<rate;
     return 0;
 }
