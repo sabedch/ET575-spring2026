@@ -95,6 +95,48 @@ int main(){
     cout<<"logical comparison 2 = "<<logicalcom2<<endl;
     cout<<"logical comparison 3 = "<<logicalcom3<<endl;
     cout<<"logical comparison 4 = "<<logicalcom4<<endl;
+
+    cout<<"----- EXERCISE -----"<<endl;
+    cout<<"\n--- PART 1 ---";
+
+    int a;
+    int b;
+
+    cout<<"\nEnter integer 1: ";
+    cin>>a;
+    cout<<"Enter integer 2: ";
+    cin>>b;
+
+    cout<<"\nThe sum of these integers are:\t"<<a+b;
+    cout<<"\nThe difference between these integers are:\t"<<a-b;
+    cout<<"\nThe product of these two integers are:\t"<<a*b;
+    cout<<"\nUsing division, the result is:\t"<<a/b;
+    cout<<"\nThe remainder of division is:\t"<<a%b<<endl;
+
+    cout<<"\n--- PART 2 ---"<<endl;
+
+    a += 10;
+    b -= 5;
+
+    cout<<"\nThe value of a is:\t"<<a;
+    cout<<"\nThe value of b is:\t"<<b<<endl;
+
+    cout<<"\n--- PART 3 ---"<<endl;
+
+    bool checka = a > b;
+    bool checkb = a == b;
+    bool checkc = a != b;
+    bool checkd = a > 0 && b > 0;
+    bool checke = a < 0 || b < 0;
+    bool checkf = a != b;
+
+    cout<<"\nIs "<<a<<" greater than "<< b<<"? "<<checka;
+    cout<<"\nIs "<<a<<" equal to "<< b<<"? "<<checkb;
+    cout<<"\nIs "<<a<<" not equal to "<< b<<"? "<<checkc;
+    cout<<"\nAre both "<<a<<" and "<<b<<" positive numbers? "<<checkd;
+    cout<<"\nIs either "<<a<<" or "<< b<<" a negtive number? "<<checke;
+    cout<<"\nIs "<<a<<" not greater than "<< b<<"? "<<checkf<<endl;
+
     return 0;
     
 }
