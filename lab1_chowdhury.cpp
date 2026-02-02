@@ -62,6 +62,7 @@ int main(){
     cout<<"\nEnter a rate: ";
     cin>>rate;
 
+    // Printing collected data
     cout<<"\nEntered country:\t"<<country;
     cout<<"\nSelected gender:\t"<<gender;
     cout<<"\nZip code:\t"<<zipcode;
