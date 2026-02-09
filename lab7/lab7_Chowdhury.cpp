@@ -9,7 +9,7 @@ lab 7, nested conditional statement
 using namespace std;
 
 int main(){
-    /*
+    
     cout<<"---- example 1: nested conditional ----"<<endl;
     // use nested conditional statement to check if a number is positive (even or odd), negative (even or odd), or 0
     int number = -8;
@@ -69,10 +69,10 @@ int main(){
     else
         cout<<"Odd"<<endl;
     */
-/*
+
     int x = 5;
     cout<<"The number is "<<(x%2==0 ? "Even" : "Odd")<<endl;
-*/
+
     cout<<"\n---- EXERCISE ----"<<endl;
     
     int budget;
