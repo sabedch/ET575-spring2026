@@ -37,5 +37,8 @@ int main(){
     printarea(length, width, area_rec);
 
     cout<<"\n----- EXERCISE"<<endl;
+    
+    printEven(421);
+
     return 0;
 }

@@ -67,3 +67,15 @@ void printarea(int length, int width, int area){
 }
 
 // EXERCISE
+
+bool isEven(int n){
+    if(n%2==00){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+void printEven(int n){
+    cout<<"Is "<<n<<" even? "<<isEven(n)<<endl;
+}
