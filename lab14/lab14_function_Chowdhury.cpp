@@ -78,3 +78,24 @@ float hypotenuse(int side1, int side2){
 void printresult(int side1, int side2, float h){
     cout<<"The hypotenuse of a triangle with sides "<<side1<<" and "<<side2<<" is = "<<h<<endl;
 }
+
+// EXERCISE
+int collectg(){
+    int n;
+    cout<<"Enter a number: "<<endl;
+    cin>>n;
+    if(n<=0){
+        cout<<"Error!";
+        return collectg();
+    }else{
+        return n;
+    }
+}
+
+float distance (int x1, int x2, int y1, int y2){
+    return sqrt(pow((x2 - x1),2) + pow((y2 - y1),2));
+}
+
+void printres(int x1, int x2, int y1, int y2, float d){
+    cout<<"The distance of points (" << x1 << "," << y1 << ") and (" << x2 + "," << y2 << ") is " <<d<<endl;
+}

@@ -24,5 +24,13 @@ int main(){
     int side2 = collectnumber();
     float h = hypotenuse(side1, side2);
     printresult(side1,side2,h);
+
+    cout<<"\n ---- EXERCISE ---- "<<endl;
+    int x1 = collectg();
+    int x2 = collectg();
+    int y1 = collectg();
+    int y2 = collectg();
+    float d = distance(x1,x2,y1,y2);
+    printres(x1,x2,y1,y2,d);
     return 0;
 }
