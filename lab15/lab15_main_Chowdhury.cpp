@@ -24,6 +24,12 @@ int main(){
     int roll2 = rolldice();
     bool resultmatch = matchdices(roll1, roll2);
     printdices(roll1, roll2, resultmatch);
+
+    cout<<"\n --- EXERCISE --- "<<endl;
+    int num1 = ran();
+    int num2 = ran();
+    chek(num1, num2);
+    prin(chek);
     
     return 0;
 }
