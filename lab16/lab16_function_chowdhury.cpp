@@ -78,3 +78,73 @@ void introarray(){
 
     cout<<"The first name is = "<<names[0]<<endl;
 }
+
+// example 4: length of an array
+void lengtharray(){
+    //sizeof function returns the number of bytes of value
+    cout<<"character = "<<sizeof(char)<<endl;
+    cout<<"string = "<<sizeof(string)<<endl;
+    cout<<"integer = "<<sizeof(int)<<endl;
+    cout<<"float = "<<sizeof(float)<<endl;
+    cout<<"double = "<<sizeof(double)<<endl;
+
+    // array
+    int numbers[] = {2,7,9,-10,3};
+    
+    cout<<"length of array numbers = "<<sizeof(numbers)<<endl;
+    // to find the number of values in an array = total size of an array / size of the data type
+    cout<<"There is "<<(sizeof(numbers))/sizeof(int)<<" values in an array"<<endl;
+}
+
+// example 5: loop through an array
+void looparray(){
+    int s =5;
+    int arr[s] = {1,2,3,4,5};
+
+    // create a pointer to arr
+    int *ptr_array = arr;
+    
+    // loop through an array
+    for(int index = 0; index<s; index++){
+        cout<<"index = "<<index<<" has value = "<<arr[index]<<endl;
+    }
+}
+
+// example 6: pass an array to a function
+//function to populate data into an array
+void fillup(int arraysize, int *arrnumbers){
+    for(int index = 0; index<arraysize; index++){
+        cout<<"Enter a number: ";
+        cin>>arrnumbers[index];
+    }
+}
+// function to print all data in an array
+void printarray(int arraysize, int *arrnumbers){
+    for(int index = 0; index<arraysize; index++){
+        cout<<arrnumbers[index]<<"\t";
+    }
+    cout<<endl;
+}
+
+// function to find the maximum number in an array
+int maxnumber(int arraysize, int *arrnumbers){
+    int maxvalue = arrnumbers[0];
+    for(int index = 0; index<arraysize; index++){
+        if(arrnumbers[index]>maxvalue){
+            maxvalue = arrnumbers[index];
+        }
+    }
+    return maxvalue;
+}
+
+// function to find the minimum number in an array
+void minnumber(int *arrnumbers){
+    int minvalue = arrnumbers[0];
+    int size = (sizeof(arrnumbers))/sizeof(int);
+    for(int index = 0; index<size; index++){
+        if(arrnumbers[index]<minvalue){
+            minvalue = arrnumbers[index];
+        }
+    }
+    cout<<"The lowest score is "<<minvalue<<endl;
+}
