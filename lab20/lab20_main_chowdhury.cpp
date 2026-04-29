@@ -20,5 +20,11 @@ int main(){
 
     cout<<"\n----- Example 4: append data ---"<<endl;
     appendmsg("samplefile.txt", "Sabed Chowdhury");
+
+    cout<<"\n----- EXERCISE ---"<<endl;
+    write("data_user.txt");
+    append("data_user.txt", "Hi :)");
+    read("data_user.txt");
+
     return 0;
 }

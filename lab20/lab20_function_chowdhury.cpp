@@ -82,3 +82,30 @@ void appendmsg(string filename, string msg){
 
     fout.close();
 }
+
+// EXERCISE
+void write(string filename){
+    ofstream fout;
+    fout.open(filename);
+    fout<<"This is my output file - Sabed Chowdhury.\n";
+    fout.close();
+}
+
+void append(string filename, string msg){
+    ofstream fout;
+    fout.open(filename, ios::app);
+    fout<<msg<<endl;
+    fout.close();
+}
+
+void read(string filename){
+    ifstream fin;
+    string line;
+    int linecounter = 1;
+    fin.open(filename);
+    while(getline(fin,line)){
+        cout<<"Sentence "<<linecounter<<" = "<<line<<endl;
+        linecounter++;
+    }
+    fin.close();
+}
