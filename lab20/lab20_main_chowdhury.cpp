@@ -19,7 +19,11 @@ int main(){
     writefile("intro.txt");
 
     cout<<"\n----- Example 4: append data ---"<<endl;
-    appendmsg("samplefile.txt", "Sabed Chowdhury");
+    // appendmsg("samplefile.txt", "Sabed Chowdhury");
+
+    cout<<"\n----- Example 5: check if a file exists ---"<<endl;
+    // checkfile("example1.txt");
+    checkfile("samplefile.txt");
 
     cout<<"\n----- EXERCISE ---"<<endl;
     write("data_user.txt");
